@@ -9,8 +9,7 @@ mongoose.connect("mongodb+srv://rosalij:YgaIDYj9uWcPcEwr@cluster0.uzxnqit.mongod
     console.log("Connected to MongoDB");
 }).catch((error) => {
     console.log("Error connecting to database: " + error);
-})
-vFVeZKx86.P_zRj
+});
 
 const app = express();
 //if no specified port, use port 3000
