@@ -5,12 +5,12 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 //connect mongodb database
-mongoose.connect("mongodb://localhost:27017/moment3").then(() => {
+mongoose.connect("mongodb+srv://rosalij:YgaIDYj9uWcPcEwr@cluster0.uzxnqit.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => {
     console.log("Connected to MongoDB");
 }).catch((error) => {
     console.log("Error connecting to database: " + error);
 })
-
+vFVeZKx86.P_zRj
 
 const app = express();
 //if no specified port, use port 3000
