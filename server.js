@@ -5,7 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 //connect mongodb database
-mongoose.connect("mongodb+srv://rosalij:YgaIDYj9uWcPcEwr@cluster0.uzxnqit.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => {
+mongoose.connect("mongodb+srv://rosalij:YgaIDYj9uWcPcEwr@cluster0.uzxnqit.mongodb.net/moment3?retryWrites=true&w=majority&appName=Cluster0").then(() => {
     console.log("Connected to MongoDB");
 }).catch((error) => {
     console.log("Error connecting to database: " + error);
