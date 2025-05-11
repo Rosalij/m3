@@ -3,7 +3,7 @@ Detta repository innehåller kod för ett enklare REST API byggt med Express. AP
 Grundläggande funktionalitet för CRUD (Create, Read, Update, Delete) är implementerad.
 
 ## Länk
-En live testversion av APIet finns tillgänglig på följande URL: [https://test-vmk0.onrender.com/](https://moment32.netlify.app](https://moment32.netlify.app/)]
+En live testversion av APIet finns tillgänglig på följande URL:(https://moment32.netlify.app/)
 
 ## Installation, databas
 APIet använder en MONGODB atlas-databas.
