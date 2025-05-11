@@ -7,7 +7,7 @@ En live testversion av APIet finns tillgänglig på följande URL:(https://momen
 
 ## Installation, databas
 APIet använder en MONGODB atlas-databas.
-Klona ner källkodsfilerna, kör kommando npm install för att installera nödvändiga npm-paket. Kör installations-skriptet install.js. 
+Klona ner källkodsfilerna, kör kommando npm install för att installera nödvändiga npm-paket. 
 API:et skapar MongoDB documents i JSON format enligt följande: {
 _id (skapas automatiskt), company: string, jobtitle: string, location: string }
 
