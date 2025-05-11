@@ -19,7 +19,7 @@ const port = process.env.PORT || 3000;
 app.use(cors()); app.use(express.json());
 
 
-
+//new moongoose schema for experience
 let experienceSchema = new mongoose.Schema({
     company: { type: String, required: true },
     jobtitle: { type: String, required: true },
@@ -43,7 +43,7 @@ app.get("/experiences", async (req, res) => {
 })
 
 
-//create row in database with POST
+//create new document in database with POST
 app.post("/experiences", async (req, res) => {
     try {
         //get data from request body
@@ -62,7 +62,7 @@ app.post("/experiences", async (req, res) => {
 });
 
 
-//update row in database
+//update document in database
 app.put("/experiences/:_id", async (req, res) => {
     try {
         const { company, jobtitle, location } = req.body;
@@ -79,7 +79,7 @@ app.put("/experiences/:_id", async (req, res) => {
 
 
 });
-//delete row in database
+//delete document in database
 app.delete("/experiences/:_id", async (req, res) => {
     try {
         await experience.findByIdAndDelete(req.params._id);
