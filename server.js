@@ -4,8 +4,10 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
+const dotenv = require('dotenv');
+dotenv.config();
 //connect mongodb database
-mongoose.connect("mongodb+srv://rosalij:YgaIDYj9uWcPcEwr@cluster0.uzxnqit.mongodb.net/moment3?retryWrites=true&w=majority&appName=Cluster0").then(() => {
+mongoose.connect(`mongodb+srv://rosalij:${process.env.DB_PASSWORD}@cluster0.uzxnqit.mongodb.net/moment3?retryWrites=true&w=majority&appName=Cluster0`).then(() => {
     console.log("Connected to MongoDB");
 }).catch((error) => {
     console.log("Error connecting to database: " + error);
